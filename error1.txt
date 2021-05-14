@@ -1,0 +1,126 @@
+Arduino: 1.8.13 (Linux), Board: "Arduino Pro or Pro Mini, ATmega328P (5V, 16 MHz)"
+
+/home/chris/arduino-1.8.13/arduino-builder -dump-prefs -logger=machine -hardware /home/chris/arduino-1.8.13/hardware -tools /home/chris/arduino-1.8.13/tools-builder -tools /home/chris/arduino-1.8.13/hardware/tools/avr -built-in-libraries /home/chris/arduino-1.8.13/libraries -libraries /home/chris/Arduino/libraries -fqbn=arduino:avr:pro:cpu=16MHzatmega328 -vid-pid=2341_0001 -ide-version=10813 -build-path /tmp/arduino_build_594159 -warnings=none -build-cache /tmp/arduino_cache_369127 -prefs=build.warn_data_percentage=75 -prefs=runtime.tools.avrdude.path=/home/chris/arduino-1.8.13/hardware/tools/avr -prefs=runtime.tools.avrdude-6.3.0-arduino17.path=/home/chris/arduino-1.8.13/hardware/tools/avr -prefs=runtime.tools.arduinoOTA.path=/home/chris/arduino-1.8.13/hardware/tools/avr -prefs=runtime.tools.arduinoOTA-1.3.0.path=/home/chris/arduino-1.8.13/hardware/tools/avr -prefs=runtime.tools.avr-gcc.path=/home/chris/arduino-1.8.13/hardware/tools/avr -prefs=runtime.tools.avr-gcc-7.3.0-atmel3.6.1-arduino7.path=/home/chris/arduino-1.8.13/hardware/tools/avr -verbose /home/chris/Arduino/chapter2/blinkLED/blinkLED.ino
+/home/chris/arduino-1.8.13/arduino-builder -compile -logger=machine -hardware /home/chris/arduino-1.8.13/hardware -tools /home/chris/arduino-1.8.13/tools-builder -tools /home/chris/arduino-1.8.13/hardware/tools/avr -built-in-libraries /home/chris/arduino-1.8.13/libraries -libraries /home/chris/Arduino/libraries -fqbn=arduino:avr:pro:cpu=16MHzatmega328 -vid-pid=2341_0001 -ide-version=10813 -build-path /tmp/arduino_build_594159 -warnings=none -build-cache /tmp/arduino_cache_369127 -prefs=build.warn_data_percentage=75 -prefs=runtime.tools.avrdude.path=/home/chris/arduino-1.8.13/hardware/tools/avr -prefs=runtime.tools.avrdude-6.3.0-arduino17.path=/home/chris/arduino-1.8.13/hardware/tools/avr -prefs=runtime.tools.arduinoOTA.path=/home/chris/arduino-1.8.13/hardware/tools/avr -prefs=runtime.tools.arduinoOTA-1.3.0.path=/home/chris/arduino-1.8.13/hardware/tools/avr -prefs=runtime.tools.avr-gcc.path=/home/chris/arduino-1.8.13/hardware/tools/avr -prefs=runtime.tools.avr-gcc-7.3.0-atmel3.6.1-arduino7.path=/home/chris/arduino-1.8.13/hardware/tools/avr -verbose /home/chris/Arduino/chapter2/blinkLED/blinkLED.ino
+Using board 'pro' from platform in folder: /home/chris/arduino-1.8.13/hardware/arduino/avr
+Using core 'arduino' from platform in folder: /home/chris/arduino-1.8.13/hardware/arduino/avr
+Detecting libraries used...
+/home/chris/arduino-1.8.13/hardware/tools/avr/bin/avr-g++ -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -flto -w -x c++ -E -CC -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10813 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR -I/home/chris/arduino-1.8.13/hardware/arduino/avr/cores/arduino -I/home/chris/arduino-1.8.13/hardware/arduino/avr/variants/eightanaloginputs /tmp/arduino_build_594159/sketch/blinkLED.ino.cpp -o /dev/null -DARDUINO_LIB_DISCOVERY_PHASE
+Alternatives for binaryMacro.h: [AVR-Programming-Library]
+ResolveLibrary(binaryMacro.h)
+  -> candidates: [AVR-Programming-Library]
+/home/chris/arduino-1.8.13/hardware/tools/avr/bin/avr-g++ -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -flto -w -x c++ -E -CC -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10813 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR -I/home/chris/arduino-1.8.13/hardware/arduino/avr/cores/arduino -I/home/chris/arduino-1.8.13/hardware/arduino/avr/variants/eightanaloginputs -I/home/chris/Arduino/libraries/AVR-Programming-Library /tmp/arduino_build_594159/sketch/blinkLED.ino.cpp -o /dev/null -DARDUINO_LIB_DISCOVERY_PHASE
+Using cached library dependencies for file: /home/chris/Arduino/libraries/AVR-Programming-Library/USART.c
+Generating function prototypes...
+/home/chris/arduino-1.8.13/hardware/tools/avr/bin/avr-g++ -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -flto -w -x c++ -E -CC -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10813 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR -I/home/chris/arduino-1.8.13/hardware/arduino/avr/cores/arduino -I/home/chris/arduino-1.8.13/hardware/arduino/avr/variants/eightanaloginputs -I/home/chris/Arduino/libraries/AVR-Programming-Library /tmp/arduino_build_594159/sketch/blinkLED.ino.cpp -o /tmp/arduino_build_594159/preproc/ctags_target_for_gcc_minus_e.cpp -DARDUINO_LIB_DISCOVERY_PHASE
+/home/chris/arduino-1.8.13/tools-builder/ctags/5.8-arduino11/ctags -u --language-force=c++ -f - --c++-kinds=svpf --fields=KSTtzns --line-directives /tmp/arduino_build_594159/preproc/ctags_target_for_gcc_minus_e.cpp
+Compiling sketch...
+/home/chris/arduino-1.8.13/hardware/tools/avr/bin/avr-g++ -c -g -Os -w -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10813 -DARDUINO_AVR_PRO -DARDUINO_ARCH_AVR -I/home/chris/arduino-1.8.13/hardware/arduino/avr/cores/arduino -I/home/chris/arduino-1.8.13/hardware/arduino/avr/variants/eightanaloginputs -I/home/chris/Arduino/libraries/AVR-Programming-Library /tmp/arduino_build_594159/sketch/blinkLED.ino.cpp -o /tmp/arduino_build_594159/sketch/blinkLED.ino.cpp.o
+Compiling libraries...
+Compiling library "AVR-Programming-Library"
+Using previously compiled file: /tmp/arduino_build_594159/libraries/AVR-Programming-Library/USART.c.o
+Compiling core...
+Using previously compiled file: /tmp/arduino_build_594159/core/wiring_pulse.S.o
+Using previously compiled file: /tmp/arduino_build_594159/core/WInterrupts.c.o
+Using previously compiled file: /tmp/arduino_build_594159/core/hooks.c.o
+Using previously compiled file: /tmp/arduino_build_594159/core/wiring.c.o
+Using previously compiled file: /tmp/arduino_build_594159/core/wiring_analog.c.o
+Using previously compiled file: /tmp/arduino_build_594159/core/wiring_digital.c.o
+Using previously compiled file: /tmp/arduino_build_594159/core/wiring_pulse.c.o
+Using previously compiled file: /tmp/arduino_build_594159/core/wiring_shift.c.o
+Using previously compiled file: /tmp/arduino_build_594159/core/CDC.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/HardwareSerial.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/HardwareSerial0.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/HardwareSerial1.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/HardwareSerial2.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/HardwareSerial3.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/IPAddress.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/PluggableUSB.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/Print.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/Stream.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/Tone.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/USBCore.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/WMath.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/WString.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/abi.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/main.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/new.cpp.o
+Using previously compiled file: /tmp/arduino_build_594159/core/core.a
+Archiving built core (caching) in: /tmp/arduino_cache_369127/core/core_arduino_avr_pro_cpu_16MHzatmega328_f68d0604998acae73f8ad0a8383d8825.a
+Linking everything together...
+/home/chris/arduino-1.8.13/hardware/tools/avr/bin/avr-gcc -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p -o /tmp/arduino_build_594159/blinkLED.ino.elf /tmp/arduino_build_594159/sketch/blinkLED.ino.cpp.o /tmp/arduino_build_594159/libraries/AVR-Programming-Library/USART.c.o /tmp/arduino_build_594159/core/core.a -L/tmp/arduino_build_594159 -lm
+/home/chris/arduino-1.8.13/hardware/tools/avr/bin/avr-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0 /tmp/arduino_build_594159/blinkLED.ino.elf /tmp/arduino_build_594159/blinkLED.ino.eep
+/home/chris/arduino-1.8.13/hardware/tools/avr/bin/avr-objcopy -O ihex -R .eeprom /tmp/arduino_build_594159/blinkLED.ino.elf /tmp/arduino_build_594159/blinkLED.ino.hex
+Using library AVR-Programming-Library in folder: /home/chris/Arduino/libraries/AVR-Programming-Library (legacy)
+/home/chris/arduino-1.8.13/hardware/tools/avr/bin/avr-size -A /tmp/arduino_build_594159/blinkLED.ino.elf
+Sketch uses 178 bytes (0%) of program storage space. Maximum is 30720 bytes.
+Global variables use 0 bytes (0%) of dynamic memory, leaving 2048 bytes for local variables. Maximum is 2048 bytes.
+/home/chris/arduino-1.8.13/hardware/tools/avr/bin/avrdude -C/home/chris/arduino-1.8.13/hardware/tools/avr/etc/avrdude.conf -v -patmega328p -cstk500v1 -P/dev/ttyACM0 -b19200 -Uflash:w:/tmp/arduino_build_594159/blinkLED.ino.hex:i 
+
+avrdude: Version 6.3-20190619
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2014 Joerg Wunsch
+
+         System wide configuration file is "/home/chris/arduino-1.8.13/hardware/tools/avr/etc/avrdude.conf"
+         User configuration file is "/home/chris/.avrduderc"
+         User configuration file does not exist or is not a regular file, skipping
+
+         Using Port                    : /dev/ttyACM0
+         Using Programmer              : stk500v1
+         Overriding Baud Rate          : 19200
+         AVR Part                      : ATmega328P
+         Chip Erase delay              : 9000 us
+         PAGEL                         : PD7
+         BS2                           : PC2
+         RESET disposition             : dedicated
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65    20     4    0 no       1024    4      0  3600  3600 0xff 0xff
+           flash         65     6   128    0 yes     32768  128    256  4500  4500 0xff 0xff
+           lfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           hfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           efuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           lock           0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           calibration    0     0     0    0 no          1    0      0     0     0 0x00 0x00
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+
+         Programmer Type : STK500
+         Description     : Atmel STK500 Version 1.x firmware
+
+avrdude: stk500_getparm(): (a) protocol error, expect=0x14, resp=0x14
+
+avrdude: stk500_getparm(): (a) protocol error, expect=0x14, resp=0x02
+
+avrdude: stk500_getparm(): (a) protocol error, expect=0x14, resp=0x10
+         Hardware Version: 135063968
+         Firmware Version: 0.134885619
+         Topcard         : STK502
+         Vtarget         : 1.8 V
+         Varef           : 0.0 V
+         Oscillator      : Off
+         SCK period      : 0.1 us
+
+avrdude: stk500_initialize(): (b) protocol error, expect=0x10, resp=0x01
+avrdude: initialization failed, rc=-1
+         Double check connections and try again, or use -F to override
+         this check.
+
+avrdude: stk500_disable(): protocol error, expect=0x14, resp=0x10
+
+avrdude done.  Thank you.
+
+the selected serial port 
+ does not exist or your board is not connected
